@@ -9,6 +9,7 @@ function App() {
   const [page, setPage] = useState('products')
   const [cartItems, setCartItems] = useState([])
   const [cartCount, setCartCount] = useState(0)
+  
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0)
 
   const handleUpdateCart = (items) => {

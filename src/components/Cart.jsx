@@ -3,7 +3,7 @@ import Footer from "./Footer"
 import "../style/style.css"
 
 export default function Cart(props) {
-    const {cartItems, cartCount, totalPrice} = props
+    const {cartItems, cartCount, totalPrice, onUpdateCartCount} = props
 
     const handleIncrement = () => {
         onUpdateCartCount(cartCount + 1)
