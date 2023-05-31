@@ -14,7 +14,6 @@ export default function Section(props){
         }else{
             setCartCount(cartCount - 1)
             setSelectedItems(selectedItems.filter((item) => item.id !== product.id))
-        
         }
     }
     

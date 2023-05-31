@@ -6,7 +6,7 @@ import Cart from './components/Cart'
 import Checkout from './components/Checkout'
 
 function App() {
-  const [page, setPage] = useState('products')
+  const [page, setPage] = useState('section')
   const [cartItems, setCartItems] = useState([])
   const [cartCount, setCartCount] = useState(0)
   
@@ -25,7 +25,7 @@ function App() {
   }
 
   const handleGoToProducts = () => {
-    setPage('products')
+    setPage('section')
   }
 
   const handleGoToCheckout = () => {
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-    {page === 'products' && (
+    {page === 'section' && (
     <div>
       <Header cartCount={cartCount}/> 
       <Section 

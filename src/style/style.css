@@ -30,8 +30,8 @@
 } 
 .div-btn-cart{
     display:flex;
-    justify-content:end;
-    max-width:61.6em;
+    justify-content:flex-end;
+    max-width:60.6em;
 }
 .btn-cart{
     border:none;
